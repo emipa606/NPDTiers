@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	<!-- Use Comments for Modding Purposes here -->
+	<ThingDef ParentName="BuildingBase">
+		<!-- Name of def (must be unique)-->
+		<defName>FridgeHopper</defName>
+		<!-- Ingame name -->
+		<label>Fridge Hopper</label>
+		<!-- Ingame description -->
+		<description>Just like a normal hopper but refrigerates your food for you</description>
+		<!-- ThingClass (Don't change) -->
+		<thingClass>NutrientPasteTiers.NPDHopper_Storage</thingClass>
+		
+		<graphicData>
+			<!-- Filepath for ingame texture -->
+			<texPath>Things/Building/Hoppers/FridgeHopper</texPath>
+			<!-- Don't Touch -->
+			<graphicClass>Graphic_Multi</graphicClass>
+			<!-- Don't Touch -->
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+
+		<!-- Layer that Texture renders on (Prefered Don't Touch) -->
+		<altitudeLayer>Building</altitudeLayer>
+		<!-- Pawn able to pass through? -->
+		<passability>PassThroughOnly</passability>
+		<!-- Don't Touch -->
+		<fillPercent>0.5</fillPercent>
+		<!-- Cost to pass over this building -->
+		<pathCost>70</pathCost>
+		<!-- Don't Touch -->
+		<canOverlapZones>false</canOverlapZones>
+		
+		<building>
+			<!-- Prevent deterioration for items on top of -->
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<!-- Storage Settings on construction -->
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<specialFiltersToDisallow>
+						<li>AllowPlantFood</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+						<li>Meat_Megaspider</li>
+					</disallowedThingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<!-- Don't Touch -->
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<!-- Don't Touch -->
+		<castEdgeShadows>true</castEdgeShadows>
+		<!-- Building Stats -->
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<!-- Building Cost (look at core defs for names) -->
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>10</Plasteel>
+			<ComponentIndustrial>5</ComponentIndustrial>
+		</costList>
+		<!-- Don't Touch -->
+		<tickerType>Never</tickerType>
+		<!-- Able to rotate building? -->
+		<rotatable>true</rotatable>
+		<!-- Disable drag select multiple buildings -->
+		<neverMultiSelect>true</neverMultiSelect>
+		<!-- Where building is accessible -->
+		<designationCategory>Production</designationCategory>
+		<!-- Don't Touch -->
+		<surfaceType>Item</surfaceType>
+		<!-- Don't Touch -->
+		<placeWorkers>
+			<li>PlaceWorker_NextToHopperAccepter</li>
+		</placeWorkers>
+		<!-- Effect when Built -->
+		<constructEffect>ConstructMetal</constructEffect>
+		<!-- Research needed before unlocked -->
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+		<!-- Icon at Build Menu -->
+		<uiIconPath>Things/Building/Hoppers/FridgeHopper_north</uiIconPath>
+		<!-- Icon Scale -->
+		<uiIconScale>0.80</uiIconScale>
+		
+		<!-- Power Properties -->
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>75</basePowerConsumption>
+			</li>
+		</comps>
+		
+		<!-- Custom Properties -->
+		<modExtensions>
+			<li Class="NutrientPasteTiers.HopperCustom">
+				<!-- Temp of Items on Hopper (Celsius) -->
+				<setTemperature>5</setTemperature>
+				<!-- 
+					Freezing: < 0
+					Refrigerated: 0.1 to 9.9
+					Not Refrigerated: > 10
+				-->
+			</li>
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>FreezerHopper</defName>
+		<label>Freezer Hopper</label>
+		<description>Just like a normal hopper but freezes your food for you</description>
+		<thingClass>NutrientPasteTiers.NPDHopper_Storage</thingClass>
+		<graphicData>
+			<texPath>Things/Building/Hoppers/FreezerHopper</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<damageData>
+				<rect>(0.05,0.1,0.9,0.9)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.5</fillPercent>
+		<pathCost>70</pathCost>
+		<canOverlapZones>false</canOverlapZones>
+		<building>
+			<preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+			<fixedStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<specialFiltersToDisallow>
+						<li>AllowPlantFood</li>
+					</specialFiltersToDisallow>
+				</filter>
+			</fixedStorageSettings>
+			<defaultStorageSettings>
+				<priority>Important</priority>
+				<filter>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+						<li>Meat_Megaspider</li>
+					</disallowedThingDefs>
+				</filter>
+			</defaultStorageSettings>
+		</building>
+		<inspectorTabs>
+			<li>ITab_Storage</li>
+		</inspectorTabs>
+		<castEdgeShadows>true</castEdgeShadows>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Flammability>0.1</Flammability>
+		</statBases>
+		<costList>
+			<Steel>50</Steel>
+			<Plasteel>50</Plasteel>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<tickerType>Never</tickerType>
+		<rotatable>true</rotatable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<designationCategory>Production</designationCategory>
+		<surfaceType>Item</surfaceType>
+		<placeWorkers>
+			<li>PlaceWorker_NextToHopperAccepter</li>
+		</placeWorkers>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+		<uiIconPath>Things/Building/Hoppers/FreezerHopper_north</uiIconPath>
+		<uiIconScale>0.85</uiIconScale>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>150</basePowerConsumption>
+			</li>
+		</comps>
+		
+		<modExtensions>
+			<li Class="NutrientPasteTiers.HopperCustom">
+				<setTemperature>-1</setTemperature>
+			</li>
+		</modExtensions>
+	</ThingDef>
+</Defs>

@@ -1,0 +1,13 @@
+Vanilla:
+MealSurvivalPack - Packaged survival meal
+MealNutrientPaste - Nutrient paste meal
+MealSimple - Simple Meal
+MealFine- Fine Meal
+MealLavish - Lavish Meal
+Kibble - Kibble (duh)
+Pemmican - Pemmican
+
+NPDTiers:
+MealImprovedNutrientPaste - Improved nutrient paste meal
+MealFineNutrientPaste - Fine Nutrient paste
+MealPrisonerNutrientPaste - Prisoner nutrient paste / rotten paste.

@@ -1,0 +1,16 @@
+<?xml version = "1.0" encoding="utf-8" ?>
+
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAddModExtension">
+				<xpath>Defs/ThingDef[defName="NutrientPasteDispenser"]</xpath>
+				<value>
+					<li Class="NutrientPasteTiers.NutrientPasteCustom">
+						<customMeal>MealNutrientPaste</customMeal>
+					</li>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>

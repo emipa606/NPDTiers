@@ -1,0 +1,35 @@
+==== List of all possible human-ingestible ThingDefs in RimWorld === 
+
+#RawIngredients
+Chocolate
+InsectJelly
+RawPotatoes
+RawBerries
+RawFungus
+RawRice
+RawAgave
+RawCorn
+Meat_Human
+Milk
+EggChickenUnfertilized
+EggChickenFertilized
+EggIguanaFertilized
+EggCobraFertilized
+EggTortoiseFertilized
+EggCassowaryFertilized
+EggEmuFertilized
+EggOstrichFertilized
+EggTurkeyFertilized
+
+#Meals
+MealSurvivalPack
+MealNutrientPaste
+MealSimple
+MealFine
+Pemmican
+Kibble
+
+
+Meat is an implied def, in order to access it the name will be
+defined as "Meat_" + the Animal meat you want.
+Ex: cow meat ThingDef = Meat_Cow

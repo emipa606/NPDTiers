@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- Improved NutrientPasteDispenser -->
+	<!-- Read comments for modding info -->
+	<ThingDef ParentName="BuildingBase">
+		<!-- Name of def (Must be unique) -->
+		<defName>INutrientPasteDispenser</defName>
+		<!-- ingame name -->
+		<label>improved nutrient paste dispenser</label>
+		<!-- ingame description -->
+		<description>The upgraded version of the fine nutrient paste dispenser, it's purple now!</description>
+		<!-- Don't Touch -->
+		<thingClass>Building_NutrientPasteDispenser</thingClass>
+		
+		<graphicData>
+			<!-- Filepath for texture -->
+			<texPath>Things/Building/Production/INutrientDispenser</texPath>
+			<!-- Don't Touch -->
+			<graphicClass>Graphic_Multi</graphicClass>
+			<!-- Color of Building (Red,Green,Blue) -->
+			<color>(192,136,220)</color>
+			<!-- Don't Touch -->
+			<shaderType>CutoutComplex</shaderType>
+			<!-- Size of Drawn Image -->
+			<drawSize>(3,4)</drawSize>
+			
+			<!-- Don't Touch -->
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+			<shadowData>
+				<volume>(2.87,0.75,3.05)</volume>
+				<offset>(0,0,0.38)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<!-- Size of building (Should be same as Draw Size) -->
+		<size>(3,4)</size>
+		<!-- Interaction Cell from center of building -->
+		<interactionCellOffset>(0,0,3)</interactionCellOffset>
+		
+		<!-- Layer the texture is drawn on -->
+		<altitudeLayer>Building</altitudeLayer>
+		<!-- Pawns able to pass through? -->
+		<passability>Impassable</passability>
+		<!-- Building blocks wind -->
+		<blockWind>true</blockWind>
+		<!-- Don't Touch -->
+		<fillPercent>1</fillPercent>
+		
+		<!-- Building Stats -->
+		<statBases>
+			<WorkToBuild>4000</WorkToBuild>
+			<MaxHitPoints>400</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+		</statBases>
+		
+		<building>
+			<!-- Do pawns go to this for food -->
+			<isMealSource>true</isMealSource>
+			<!-- Needs Hopper to work? -->
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<!-- Cost of meal -->
+			<nutritionCostPerDispense>0.3</nutritionCostPerDispense>
+			<!-- Sound when dispensed -->
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		
+		<!-- Power Properties  -->
+		<comps>
+			<li Class="CompProperties_Power">
+			<!-- Don't Touch -->
+			<compClass>CompPowerTrader</compClass>
+			<!-- Power Cost -->
+			<basePowerConsumption>500</basePowerConsumption>
+			</li>
+			
+			<!-- Flick on / off power -->
+			<li Class="CompProperties_Flickable"/>
+			<!-- Breaks down and needs repair -->
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		
+		<!-- Build cost -->
+		<costList>
+			<Steel>250</Steel>
+			<ComponentIndustrial>8</ComponentIndustrial>
+		</costList>
+		<!-- Preferred Don't Touch -->
+		<socialPropernessMatters>true</socialPropernessMatters>
+		<!-- Needed, so Don't Touch -->
+		<hasInteractionCell>true</hasInteractionCell>
+		<!-- Terrain needed to be placed -->
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<!-- Where Building is accessible -->
+		<designationCategory>Production</designationCategory>
+		<!-- Effect when built -->
+		<constructEffect>ConstructMetal</constructEffect>
+		<!-- Hotkey to select / build -->
+		<designationHotKey>Misc6</designationHotKey>
+		<!-- Don't Touch -->
+		<canOverlapZones>false</canOverlapZones>
+		<!-- Skill needed (construction) to build -->
+		<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+		
+		<!-- Research needed to unlock -->
+		<researchPrerequisites>
+			<li>ImprovedNutrientPaste</li>
+		</researchPrerequisites>
+
+		<!-- Custom Properties -->
+		<modExtensions>
+			<li Class="NutrientPasteTiers.NutrientPasteCustom">
+				<!-- Meal Dispensed -->
+				<customMeal>MealImprovedNutrientPaste</customMeal>
+				<!-- Ingredients hidden from colonists? -->
+				<mysteryIngredients>false</mysteryIngredients>
+				<!-- 
+				Specific List of Ingredients for NPD?
+				Leave empty / do not include if you want normal NPD item cost.
+				You can obtain the ThingDef names from Mods/Core/Defs/ThingDefs_Items/
+				and either raw plant, implicit meat defs, or animal products. For list of
+				all ingestible foods look at Food.txt in this folder
+				-->
+				
+				<!-- Example Ingredient List
+				<ingredientList>
+					<Chocolate>0.4</Chocolate>
+					<Milk>0.8</Milk>
+				</ingredientList>
+				-->
+			</li>
+		</modExtensions>
+		
+	</ThingDef>
+
+	<!-- Fine NutrientPasteDispenser -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>FNutrientPasteDispenser</defName>
+		<label>fine nutrient paste dispenser</label>
+		<description>Artificially flavored and textured,the nutrient paste dispensed actually tastes pretty good!</description>
+		<thingClass>Building_NutrientPasteDispenser</thingClass>
+		
+		<graphicData>
+			<texPath>Things/Building/Production/FNutrientDispenser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<color>(192,214,255)</color>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+			<shadowData>
+				<volume>(2.87,0.75,3.05)</volume>
+				<offset>(0,0,0.38)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<size>(3,4)</size>
+		<interactionCellOffset>(0,0,3)</interactionCellOffset>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		
+		<statBases>
+			<WorkToBuild>5000</WorkToBuild>
+			<MaxHitPoints>600</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+		</statBases>
+		
+		<building>
+			<isMealSource>true</isMealSource>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<nutritionCostPerDispense>0.6</nutritionCostPerDispense>
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>600</basePowerConsumption>
+			</li>
+			
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		
+		<costList>
+			<Steel>500</Steel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+		</costList>
+		
+		<socialPropernessMatters>true</socialPropernessMatters>
+		
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc6</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+		
+		<researchPrerequisites>
+			<li>FineNutrientPaste</li>
+		</researchPrerequisites>
+
+		<modExtensions>
+			<li Class="NutrientPasteTiers.NutrientPasteCustom">
+				<customMeal>MealFineNutrientPaste</customMeal>
+				<mysteryIngredients>false</mysteryIngredients>
+			</li>
+		</modExtensions>
+		
+	</ThingDef>
+	
+	<!-- Prisoner NutrientPasteDispenser -->
+	<ThingDef ParentName="BuildingBase">
+		<defName>PrisonerNutrientPaste</defName>
+		<label>prisoner nutrient paste dispenser</label>
+		<description>Rusty gears and mold make this a questionable source of food.</description>
+		<thingClass>Building_NutrientPasteDispenser</thingClass>
+		
+		<graphicData>
+			<texPath>Things/Building/Production/PNutrientDispenser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<color>(212,212,212)</color>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+			<shadowData>
+				<volume>(2.87,0.75,3.05)</volume>
+				<offset>(0,0,0.38)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<size>(3,4)</size>
+		<interactionCellOffset>(0,0,3)</interactionCellOffset>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+		</statBases>
+		
+		<building>
+			<isMealSource>true</isMealSource>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<nutritionCostPerDispense>0.2</nutritionCostPerDispense>
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		
+		<socialPropernessMatters>true</socialPropernessMatters>
+		
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc6</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<researchPrerequisites>
+			<li>PrisonerNutrientPaste</li>
+		</researchPrerequisites>
+
+		<modExtensions>
+			<li Class="NutrientPasteTiers.NutrientPasteCustom">
+				<customMeal>MealPrisonerNutrientPaste</customMeal>
+				<mysteryIngredients>true</mysteryIngredients>
+			</li>
+		</modExtensions>
+		
+	</ThingDef>
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>ChocoNutrientPaste</defName>
+		<label>chocolate paste dispenser</label>
+		<description>using a recycled nutrient paste dispenser, you can create yourself a fine chocolate paste dispenser!</description>
+		<thingClass>Building_NutrientPasteDispenser</thingClass>
+		
+		<graphicData>
+			<texPath>Things/Building/Production/PNutrientDispenser</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<color>(160,93,0)</color>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>(3,4)</drawSize>
+			<damageData>
+				<rect>(0.02,0.25,2.96,2.85)</rect>
+				<cornerTL>Damage/Corner</cornerTL>
+				<cornerTR>Damage/Corner</cornerTR>
+			</damageData>
+			<shadowData>
+				<volume>(2.87,0.75,3.05)</volume>
+				<offset>(0,0,0.38)</offset>
+			</shadowData>
+		</graphicData>
+		
+		<size>(3,4)</size>
+		<interactionCellOffset>(0,0,3)</interactionCellOffset>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<fillPercent>1</fillPercent>
+		
+		<statBases>
+			<WorkToBuild>1500</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Flammability>0.4</Flammability>
+		</statBases>
+		
+		<building>
+			<isMealSource>true</isMealSource>
+			<wantsHopperAdjacent>true</wantsHopperAdjacent>
+			<nutritionCostPerDispense>0.2</nutritionCostPerDispense>
+			<soundDispense>DispensePaste</soundDispense>
+		</building>
+		
+		<comps>
+			<li Class="CompProperties_Power">
+			<compClass>CompPowerTrader</compClass>
+			<basePowerConsumption>400</basePowerConsumption>
+			</li>
+			
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		
+		<costList>
+			<Steel>250</Steel>
+			<ComponentIndustrial>6</ComponentIndustrial>
+		</costList>
+		
+		<socialPropernessMatters>true</socialPropernessMatters>
+		
+		<hasInteractionCell>true</hasInteractionCell>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<designationCategory>Production</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<designationHotKey>Misc6</designationHotKey>
+		<canOverlapZones>false</canOverlapZones>
+		<constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+		
+		<researchPrerequisites>
+			<li>NutrientPaste</li>
+		</researchPrerequisites>
+
+		<modExtensions>
+			<li Class="NutrientPasteTiers.NutrientPasteCustom">
+				<customMeal>MealChocoPaste</customMeal>
+				<mysteryIngredients>false</mysteryIngredients>
+				<ingredientList>
+					<Chocolate>0.6</Chocolate>
+				</ingredientList>
+			</li>
+		</modExtensions>
+		
+	</ThingDef>
+	
+</Defs>
