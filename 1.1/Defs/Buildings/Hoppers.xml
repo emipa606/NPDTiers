@@ -46,6 +46,9 @@
 					<categories>
 						<li>FoodRaw</li>
 					</categories>
+					  <thingDefs>
+						<li>Chocolate</li>
+					  </thingDefs>
 					<specialFiltersToDisallow>
 						<li>AllowPlantFood</li>
 					</specialFiltersToDisallow>
@@ -157,6 +160,9 @@
 					<categories>
 						<li>FoodRaw</li>
 					</categories>
+					  <thingDefs>
+						<li>Chocolate</li>
+					  </thingDefs>
 					<specialFiltersToDisallow>
 						<li>AllowPlantFood</li>
 					</specialFiltersToDisallow>
