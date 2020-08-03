@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <ImprovedNutrientPaste.label>Improved Nutrient paste</ImprovedNutrientPaste.label>
+  <ImprovedNutrientPaste.description>Build an improved varient of the nutrient paste dispenser which tastes slightly better</ImprovedNutrientPaste.description>
+
+  <FineNutrientPaste.label>Fine Nutrient paste</FineNutrientPaste.label>
+  <FineNutrientPaste.description>An exquisite and complicated series of injections improves the nutrient paste to taste much better</FineNutrientPaste.description>
+
+  <PrisonerNutrientPaste.label>Prisoner Nutrient paste</PrisonerNutrientPaste.label>
+  <PrisonerNutrientPaste.description>Build a surprisingly efficient nutrient paste dispenser that sacrifices taste for cost efficiency.</PrisonerNutrientPaste.description>
+
+
+</LanguageData>

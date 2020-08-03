@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Read comments for modding info -->
+
+  <INutrientPasteDispenser.label>improved nutrient paste dispenser</INutrientPasteDispenser.label>
+  <INutrientPasteDispenser.description>The upgraded version of the fine nutrient paste dispenser, it's purple now!</INutrientPasteDispenser.description>
+
+
+  <!-- Fine NutrientPasteDispenser -->
+
+  <FNutrientPasteDispenser.label>fine nutrient paste dispenser</FNutrientPasteDispenser.label>
+  <FNutrientPasteDispenser.description>Artificially flavored and textured,the nutrient paste dispensed actually tastes pretty good!</FNutrientPasteDispenser.description>
+
+
+  <!-- Prisoner NutrientPasteDispenser -->
+
+  <PrisonerNutrientPaste.label>prisoner nutrient paste dispenser</PrisonerNutrientPaste.label>
+  <PrisonerNutrientPaste.description>Rusty gears and mold make this a questionable source of food.</PrisonerNutrientPaste.description>
+
+  <ChocoNutrientPaste.label>chocolate paste dispenser</ChocoNutrientPaste.label>
+  <ChocoNutrientPaste.description>using a recycled nutrient paste dispenser, you can create yourself a fine chocolate paste dispenser!</ChocoNutrientPaste.description>
+
+
+</LanguageData>

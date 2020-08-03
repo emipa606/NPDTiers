@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Improved Nutrient Paste -->
+
+  <MealImprovedNutrientPaste.label>improved nutrient paste meal</MealImprovedNutrientPaste.label>
+  <MealImprovedNutrientPaste.description>An improved nutrient paste meal that tastes bland but not disgusting</MealImprovedNutrientPaste.description>
+
+
+  <!-- Fine Nutrient Paste -->
+
+  <MealFineNutrientPaste.label>fine nutrient paste meal</MealFineNutrientPaste.label>
+  <MealFineNutrientPaste.description>A nutrient paste meal that has been artificially flavored. Tastes pretty good actually!</MealFineNutrientPaste.description>
+
+
+  <!-- Rotten Nutrient Paste -->
+
+  <MealPrisonerNutrientPaste.label>rotten nutrient paste</MealPrisonerNutrientPaste.label>
+  <MealPrisonerNutrientPaste.description>A gross concotion of unknown ingredients. Because it is so processed it deteriorates very slowly and doesn't spoil.</MealPrisonerNutrientPaste.description>
+
+
+  <!-- Choco Paste -->
+
+  <MealChocoPaste.label>Chocolate paste meal</MealChocoPaste.label>
+  <MealChocoPaste.description>A chocolate paste meal made of coco beans from the Chocolate Paste Dispenser.</MealChocoPaste.description>
+
+
+</LanguageData>

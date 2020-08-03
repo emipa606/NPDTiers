@@ -2,7 +2,7 @@
 <ModSyncNinjaData>
   <ID>52f4b458-d780-4d46-aeba-08661739ec42</ID>
   <ModName>NPDTiers - The Nutrient Paste Expansion Mod (Continued)</ModName>
-  <Version>1.0.1.0</Version>
+  <Version>1.0.2.0</Version>
   <SaveBreaking>False</SaveBreaking>
   <Host name="Github">
     <Owner>emipa606</Owner>
@@ -12,7 +12,3 @@
     <Branch>master</Branch>
   </Host>
 </ModSyncNinjaData>
-
-
-
-

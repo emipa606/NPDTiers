@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <AteFowlMeal.stages.0.label>ate fowl meal</AteFowlMeal.stages.0.label>
+  <AteFowlMeal.stages.0.description>I don't know what I just ate but it made me want to vomit.</AteFowlMeal.stages.0.description>
+
+  <AteFinePasteMeal.stages.0.label>ate fine paste meal</AteFinePasteMeal.stages.0.label>
+  <AteFinePasteMeal.stages.0.description>the only thing that would make this better is the texture, it tastes fine!</AteFinePasteMeal.stages.0.description>
+
+  <AteChocoPasteMeal.stages.0.label>ate chocolate paste meal</AteChocoPasteMeal.stages.0.label>
+  <AteChocoPasteMeal.stages.0.description>I ate a chocolate paste meal, tasty!</AteChocoPasteMeal.stages.0.description>
+
+
+</LanguageData>

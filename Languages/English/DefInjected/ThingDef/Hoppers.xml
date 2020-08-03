@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Use Comments for Modding Purposes here -->
+
+  <FridgeHopper.label>Fridge Hopper</FridgeHopper.label>
+  <FridgeHopper.description>Just like a normal hopper but refrigerates your food for you</FridgeHopper.description>
+
+  <FreezerHopper.label>Freezer Hopper</FreezerHopper.label>
+  <FreezerHopper.description>Just like a normal hopper but freezes your food for you</FreezerHopper.description>
+
+
+</LanguageData>
