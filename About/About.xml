@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>NPDTiers - The Nutrient Paste Expansion Mod (Continued)</name>
   <packageId>Mlie.NPDTiers</packageId>
@@ -8,6 +8,7 @@
     <li>1.0</li>
     <li>1.1</li>
     <li>1.2</li>
+    <li>1.3</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -20,49 +21,68 @@
   <loadAfter>
     <li>brrainz.harmony</li>
   </loadAfter>
-  <description>Update of Mistor Love n Smash Phils mod for RimWorld 1.1
+  <description>[img]https://i.imgur.com/WAEzk68.png[/img]
+Update of Mistor Love n Smash Phils mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1864411034
 
-[img]https://raw.githubusercontent.com/emipa606/RimWorld-Wrapper/master/Notice.png[/img]
+[img]https://i.imgur.com/7Gzt3Rg.png[/img]
 
-Support-chat:
-https://invite.gg/mlie
-
-Non-steam version:
-https://github.com/emipa606/NPDTiers
+[table]
+	[tr]
+		[td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+		[td][url=https://github.com/emipa606/NPDTiers][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+	[/tr]
+[/table]
 	
---- Original Description ---
-NPDTiers is a base mod that adds the framework for creating your own Nutrient Paste Dispenser (NPD). Originally, the NPD is hard coded into the game making it difficult to replicate or change. With this mod however, you have more access to things in the xml files such as the meal it will dispense or even whether or not ingredients affect debuffs (like human meat). If you want to create or change the original NPD or any of the ones added by this mod, they are in Defs/Buildings/NewNPDExample.xml inside the mod folder.
+[img]https://i.imgur.com/NOW7jU1.png[/img]
 
-4 Nutrient Paste Dispensers added by this mod
+[IMG]https://i.imgur.com/4eOBD6w.png[/IMG]
+
+NPDTiers is a base mod that adds the framework for creating your own Nutrient Paste Dispenser (NPD). Originally, the NPD is hard coded into the game making it difficult to replicate or change.  With this mod however, you have more access to things in the xml files such as the meal it will dispense or even whether or not ingredients affect debuffs (like human meat). If you want to create or change the original NPD or any of the ones added by this mod, they are in Defs/Buildings/NewNPDExample.xml inside the mod folder.
+ 
+[h1] 4 Nutrient Paste Dispensers added by this mod [/h1]
 Chocolate Paste Dispenser
-Produces tasty chocolate meal (+6 mood)
-Only uses chocolate as a ingredient
+[list]
+    [*]Produces tasty chocolate meal (+6 mood)
+    [*]Only uses chocolate as a ingredient
+[/list]
 Prisoner Nutrient Paste Dispenser
-Produces disgusting meal (-10 mood)
-Not affected by human or insect meat
-Requires less ingredients to produce a meal
+[list]
+    [*]Produces disgusting meal (-10 mood)
+    [*]Not affected by human or insect meat
+    [*]Requires less ingredients to produce a meal
+[/list]
 Improved Nutrient Paste Dispenser
-Produces Improved NPD meal (similar to Simple Meal)
-Affected by human and insect meat
-Consumes same amount of ingredients as original NPD
+[list]
+    [*]Produces Improved NPD meal (similar to Simple Meal)
+    [*]Affected by human and insect meat
+    [*]Consumes same amount of ingredients as original NPD
+[/list]
 Fine Nutrient Paste Dispenser
-Produces Fine NPD meal (+2 mood)
-Affected by human and insect meat
-Consumes more amount of ingredients than both Original and Improved NPD (12 food)
+[list]
+    [*]Produces Fine NPD meal (+2 mood)
+    [*]Affected by human and insect meat
+    [*]Consumes more amount of ingredients than both Original and Improved NPD (12 food)
+[/list]
 
-3 Hoppers added by this mod
+[h1] 3 Hoppers added by this mod [/h1]
 Refrigerator Hopper
-Uses 75 power
-Chills food, preserving the food and making it last longer
+[list]
+    [*]Uses 75 power
+    [*]Chills food, preserving the food and making it last longer
+[/list]
 Freezer Hopper
-Uses 150 power
-Freezes Food, keeping it from spoiling as long as its kept frozen.
+[list]
+    [*]Uses 150 power
+    [*]Freezes Food, keeping it from spoiling as long as its kept frozen.
+[/list]
 Grinder Hopper - Not yet Implemented
-N/A
-N/A
+[list]
+    [*]N/A
+    [*]N/A
+[/list]
 
-
+[IMG]https://i.imgur.com/WPOySFN.png[/IMG]
 
 Q: Where do I go to add more nutrient paste dispensers or to edit the current ones?
 A: steamapps/workshop/content/294100/1864411034/Defs/Buildings/NewNPDExample.xml
@@ -75,28 +95,41 @@ A: Please do! We are looking in ways to further expand this mod.
 
 Q: Is this mod incompatible with anything?
 A: RimFridge currently is overwritten by the custom hoppers added by this mod.
-
+ 
 Q: Is this mod save game compatible? Can I remove it without issue?
-A: Yes and yes. But all custom NPD's must be removed from the map before you do so (original NPD is fine)
+A: Yes and yes. But all custom NPD&apos;s must be removed from the map before you do so (original NPD is fine)
 
 Q: Are the default dispensers added by the mod OP?
 A: That is for you to decide. they are more a proof of concept and can be modified by the user if they wish.
 
 Q: Can I make my dispenser a drug / beer dispenser?
-A: Actually, Yes, You can. Replace the line &gt;isMealSource&gt;true&gt;/isMealSource&gt; with &gt;designationCategory&gt;Joy&gt;/designationCategory&gt; and during assigned rec time they will take the item it dispenses. This was found out by Cegorach.
+A: Actually, Yes, You can. Replace the line &lt;isMealSource&gt;true&lt;/isMealSource&gt; with &lt;designationCategory&gt;Joy&lt;/designationCategory&gt; and during assigned rec time they will take the item it dispenses. This was found out by Cegorach.
 
-
+[IMG]https://i.imgur.com/FSusaPE.png[/IMG]
 
 N/A
 
-
+[IMG]https://i.imgur.com/XMsjox3.png[/IMG]
 
 1) Grinder Hoppers
 
-
+[IMG]https://i.imgur.com/agSDUsC.png[/IMG]
 
 Smash Phil - Coding, Sorted the XML Folders and Organised
 Mistor Love - Sprites / Textures
 
-GitHub: https://github.com/SmashPhil/NPDTiers</description>
+[IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
+
+
+[img]https://i.imgur.com/Rs6T6cr.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]
+</description>
 </ModMetaData>
+

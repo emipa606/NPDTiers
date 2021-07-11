@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using Verse;
-using RimWorld;
-using UnityEngine;
+﻿using Verse;
 
 namespace NutrientPasteTiers
 {
@@ -10,6 +6,5 @@ namespace NutrientPasteTiers
     {
         public float setTemperature;
         //Can add more
-
     }
 }

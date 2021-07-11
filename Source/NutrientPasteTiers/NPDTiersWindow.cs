@@ -1,26 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using Verse;
-using RimWorld;
 using UnityEngine;
+using Verse;
 
 namespace NutrientPasteTiers
 {
-    public class NPDTiersSettings : ModSettings
-    {
-        //List<Building_NutrientPasteDispenser> npdList = new List<Building_NutrientPasteDispenser>();
-
-        public NPDModOption options;
-        
-        public override void ExposeData()
-        {
-
-            //Scribe_Collections.Look(ref npdList, "npdList", LookMode.Reference);
-            //Scribe_Values(ref options, "options");
-            base.ExposeData();
-        }
-    }
-
     public class NPDTiersWindow : Mod
     {
         public static NPDTiersSettings settings;
@@ -32,7 +15,7 @@ namespace NutrientPasteTiers
 
         public static void DebugLog(string message = null, Exception e = null)
         {
-            #if DEBUG
+#if DEBUG
             if( !(message is null) )
             {
                 Log.Warning("[ NPDTiers ] - " + message);
@@ -51,12 +34,12 @@ namespace NutrientPasteTiers
                     e.Data
                 }));
             }
-            #endif
+#endif
         }
 
         public override void DoSettingsWindowContents(Rect rect)
         {
-            Listing_Standard listingStandard = new Listing_Standard();
+            var listingStandard = new Listing_Standard();
             listingStandard.Begin(rect);
 
             //listingStandard.CheckboxLabeled("DisableNPDExamples".Translate(), ref settings.disableExampleNPDs, "DisableNPDTooltip".Translate());

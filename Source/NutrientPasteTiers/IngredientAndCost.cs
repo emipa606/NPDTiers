@@ -1,9 +1,5 @@
 ﻿using System;
-using System.Xml;
-using System.Collections.Generic;
 using Verse;
-using RimWorld;
-using UnityEngine;
 
 namespace NutrientPasteTiers
 {
@@ -17,43 +13,32 @@ namespace NutrientPasteTiers
                 {
                     "Tried to set nutrition cost of ", thingDef.defName,
                     " to a value less than 0."
-                }), false);
+                }));
                 nutritionCost = 0f;
             }
+
             this.thingDef = thingDef;
             this.nutritionCost = nutritionCost;
         }
 
-        public ThingDef ThingDef
-        {
-            get
-            {
-                return this.thingDef;
-            }
-        }
+        public ThingDef ThingDef => thingDef;
 
-        public float NutritionCost
-        {
-            get
-            {
-                return this.nutritionCost;
-            }
-        }
+        public float NutritionCost => nutritionCost;
 
         public void ExposeData()
         {
-            Scribe_Defs.Look<ThingDef>(ref this.thingDef, "thingDef");
-            Scribe_Values.Look<float>(ref this.nutritionCost, "nutritionCost");
+            Scribe_Defs.Look(ref thingDef, "thingDef");
+            Scribe_Values.Look(ref nutritionCost, "nutritionCost");
         }
 
         public IngredientAndCost WithCost(float newCost)
         {
-            return new IngredientAndCost(this.thingDef, newCost);
+            return new IngredientAndCost(thingDef, newCost);
         }
 
         public override bool Equals(object obj)
         {
-            return obj is IngredientAndCost && this.Equals((IngredientAndCost)obj);
+            return obj is IngredientAndCost cost && Equals(cost);
         }
 
         public bool Equals(IngredientAndCost other)
@@ -65,6 +50,7 @@ namespace NutrientPasteTiers
         {
             return a.thingDef == b.thingDef && a.nutritionCost == b.nutritionCost;
         }
+
         public static bool operator !=(IngredientAndCost a, IngredientAndCost b)
         {
             return !(a == b);
@@ -72,27 +58,21 @@ namespace NutrientPasteTiers
 
         public override int GetHashCode()
         {
-            return Gen.HashCombine<ThingDef>((int)(this.nutritionCost * 10), this.thingDef);
+            return Gen.HashCombine((int) (nutritionCost * 10), thingDef);
         }
 
         public override string ToString()
         {
-            return string.Concat(new object[]
-            {
-                "(",
-                this.nutritionCost,
-                "x ",
-                (this.thingDef == null) ? "null" : this.thingDef.defName,
-                ")"
-            });
+            return string.Concat("(", nutritionCost, "x ", thingDef == null ? "null" : thingDef.defName, ")");
         }
 
         public static implicit operator IngredientAndCost(IngredientAndCostClass t)
         {
-            if(t == null)
+            if (t == null)
             {
                 return new IngredientAndCost(null, 0);
             }
+
             return new IngredientAndCost(t.thingDef, t.nutritionCost);
         }
 

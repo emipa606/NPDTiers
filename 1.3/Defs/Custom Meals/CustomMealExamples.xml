@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- Improved Nutrient Paste -->
+  <ThingDef ParentName="MealBase">
+    <defName>MealImprovedNutrientPaste</defName>
+    <label>improved nutrient paste meal</label>
+    <description>An improved nutrient paste meal that tastes bland but not disgusting</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/INutrientPaste</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <Mass>0.25</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealSimple</preferability>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>0.75</daysToRotStart>
+        <!-- short rot time, you want to make them as needed not store them -->
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- Fine Nutrient Paste -->
+  <ThingDef ParentName="MealBase">
+    <defName>MealFineNutrientPaste</defName>
+    <label>fine nutrient paste meal</label>
+    <description>A nutrient paste meal that has been artificially flavored. Tastes pretty good actually!</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/FNutrientPaste</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <Mass>0.25</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteFinePasteMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>0.75</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+  <!-- Rotten Nutrient Paste -->
+  <ThingDef ParentName="MealBase">
+    <defName>MealPrisonerNutrientPaste</defName>
+    <label>rotten nutrient paste</label>
+    <description>A gross concotion of unknown ingredients. Because it is so processed it deteriorates very slowly and doesn't spoil.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/PNutrientPaste</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <DeteriorationRate>0.1</DeteriorationRate>
+      <MarketValue>0</MarketValue>
+      <Mass>0.25</Mass>
+      <Nutrition>0.9</Nutrition>
+    </statBases>
+    <ingestible>
+      <preferability>RawBad</preferability>
+      <tasteThought>AteFowlMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+  </ThingDef>
+  <!-- Choco Paste -->
+  <ThingDef ParentName="MealBase">
+    <defName>MealChocoPaste</defName>
+    <label>Chocolate paste meal</label>
+    <description>A chocolate paste meal made of coco beans from the Chocolate Paste Dispenser.</description>
+    <graphicData>
+      <texPath>Things/Item/Meal/ChocoPaste</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>18</MarketValue>
+      <Nutrition>0.9</Nutrition>
+      <Mass>0.25</Mass>
+    </statBases>
+    <ingestible>
+      <preferability>MealFine</preferability>
+      <tasteThought>AteChocoPasteMeal</tasteThought>
+      <ingestEffect>EatVegetarian</ingestEffect>
+      <ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>1.75</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+  </ThingDef>
+</Defs>
