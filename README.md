@@ -97,13 +97,13 @@ Q: Is this mod incompatible with anything?
 A: RimFridge currently is overwritten by the custom hoppers added by this mod.
  
 Q: Is this mod save game compatible? Can I remove it without issue?
-A: Yes and yes. But all custom NPD&apos;s must be removed from the map before you do so (original NPD is fine)
+A: Yes and yes. But all custom NPD's must be removed from the map before you do so (original NPD is fine)
 
 Q: Are the default dispensers added by the mod OP?
 A: That is for you to decide. they are more a proof of concept and can be modified by the user if they wish.
 
 Q: Can I make my dispenser a drug / beer dispenser?
-A: Actually, Yes, You can. Replace the line &lt;isMealSource&gt;true&lt;/isMealSource&gt; with &lt;designationCategory&gt;Joy&lt;/designationCategory&gt; and during assigned rec time they will take the item it dispenses. This was found out by Cegorach.
+A: Actually, Yes, You can. Replace the line isMealSourcetrue/isMealSource with designationCategoryJoy/designationCategory and during assigned rec time they will take the item it dispenses. This was found out by Cegorach.
 
 [IMG]https://i.imgur.com/FSusaPE.png[/IMG]
 
@@ -131,6 +131,8 @@ Mistor Love - Sprites / Textures
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
+
 
 
 

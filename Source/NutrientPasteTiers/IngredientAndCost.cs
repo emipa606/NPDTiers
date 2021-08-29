@@ -58,7 +58,7 @@ namespace NutrientPasteTiers
 
         public override int GetHashCode()
         {
-            return Gen.HashCombine((int) (nutritionCost * 10), thingDef);
+            return Gen.HashCombine((int)(nutritionCost * 10), thingDef);
         }
 
         public override string ToString()

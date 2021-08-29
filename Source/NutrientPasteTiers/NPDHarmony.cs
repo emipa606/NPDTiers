@@ -510,7 +510,7 @@ namespace NutrientPasteTiers
         public static void GetReportModified(ref string __result, JobDriver_FoodDeliver __instance)
         {
             var targetBuilding = __instance.job.GetTarget(TargetIndex.A).Thing;
-            var deliveree = (Pawn) __instance.job.targetB.Thing;
+            var deliveree = (Pawn)__instance.job.targetB.Thing;
             if (targetBuilding is Building_NutrientPasteDispenser && deliveree != null)
             {
                 __result = __instance.job.def.reportString.Replace("TargetA",

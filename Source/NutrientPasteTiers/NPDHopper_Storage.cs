@@ -5,14 +5,12 @@ using Verse;
 
 namespace NutrientPasteTiers
 {
-    public class NPDHopper_Storage : Building, ISlotGroupParent, IStoreSettingsParent, IHaulDestination
+    public class NPDHopper_Storage : Building, ISlotGroupParent
     {
+        private readonly SlotGroup slotGroup;
         private List<IntVec3> cachedOccupiedCells;
 
         private StorageSettings settings;
-
-
-        private readonly SlotGroup slotGroup;
 
         public NPDHopper_Storage()
         {

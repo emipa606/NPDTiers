@@ -1,5 +1,8 @@
 # Changelog for NPDTiers
 
+1.0.4.0 - Verified that rimfridge is no longer overwritten
+
+
 1.0.3.0 - Mod updated for 1.3 and passed autotests
 
 

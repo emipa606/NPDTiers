@@ -56,7 +56,7 @@ namespace NutrientPasteTiers
 
         public override int GetHashCode()
         {
-            return (thingDef.shortHash + (int) (nutritionCost * 10)) << 16;
+            return (thingDef.shortHash + (int)(nutritionCost * 10)) << 16;
         }
 
         public static implicit operator IngredientAndCostClass(IngredientAndCost t)
