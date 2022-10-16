@@ -2,19 +2,19 @@
 using UnityEngine;
 using Verse;
 
-namespace NutrientPasteTiers
+namespace NutrientPasteTiers;
+
+public class NPDTiersWindow : Mod
 {
-    public class NPDTiersWindow : Mod
+    public static NPDTiersSettings settings;
+
+    public NPDTiersWindow(ModContentPack content) : base(content)
     {
-        public static NPDTiersSettings settings;
+        settings = GetSettings<NPDTiersSettings>();
+    }
 
-        public NPDTiersWindow(ModContentPack content) : base(content)
-        {
-            settings = GetSettings<NPDTiersSettings>();
-        }
-
-        public static void DebugLog(string message = null, Exception e = null)
-        {
+    public static void DebugLog(string message = null, Exception e = null)
+    {
 #if DEBUG
             if( !(message is null) )
             {
@@ -35,24 +35,23 @@ namespace NutrientPasteTiers
                 }));
             }
 #endif
-        }
+    }
 
-        public override void DoSettingsWindowContents(Rect rect)
-        {
-            var listingStandard = new Listing_Standard();
-            listingStandard.Begin(rect);
+    public override void DoSettingsWindowContents(Rect rect)
+    {
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(rect);
 
-            //listingStandard.CheckboxLabeled("DisableNPDExamples".Translate(), ref settings.disableExampleNPDs, "DisableNPDTooltip".Translate());
-            //listingStandard.CheckboxLabeled("DisableIngredientCheck".Translate(), ref settings.mysteryMeat, "DisableIngredientTooltip".Translate());
+        //listingStandard.CheckboxLabeled("DisableNPDExamples".Translate(), ref settings.disableExampleNPDs, "DisableNPDTooltip".Translate());
+        //listingStandard.CheckboxLabeled("DisableIngredientCheck".Translate(), ref settings.mysteryMeat, "DisableIngredientTooltip".Translate());
 
-            listingStandard.End();
+        listingStandard.End();
 
-            base.DoSettingsWindowContents(rect);
-        }
+        base.DoSettingsWindowContents(rect);
+    }
 
-        public override string SettingsCategory()
-        {
-            return "NutrientPasteTiersCategoryLabel".Translate();
-        }
+    public override string SettingsCategory()
+    {
+        return "NutrientPasteTiersCategoryLabel".Translate();
     }
 }

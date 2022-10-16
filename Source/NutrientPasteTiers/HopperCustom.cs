@@ -1,10 +1,9 @@
 ﻿using Verse;
 
-namespace NutrientPasteTiers
+namespace NutrientPasteTiers;
+
+public class HopperCustom : DefModExtension
 {
-    public class HopperCustom : DefModExtension
-    {
-        public float setTemperature;
-        //Can add more
-    }
+    public float setTemperature;
+    //Can add more
 }

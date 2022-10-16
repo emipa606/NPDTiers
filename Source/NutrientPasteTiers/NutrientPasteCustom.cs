@@ -2,46 +2,45 @@
 using RimWorld;
 using Verse;
 
-namespace NutrientPasteTiers
+namespace NutrientPasteTiers;
+
+public class NutrientPasteCustom : DefModExtension
 {
-    public class NutrientPasteCustom : DefModExtension
+    public ThingDef customMeal;
+
+    public List<IngredientAndCostClass> ingredientList = new List<IngredientAndCostClass>();
+
+    public bool mysteryIngredients = false;
+
+    public Thing FindNextIngredientInHopper(List<IntVec3> cachedCells, Building_NutrientPasteDispenser instance,
+        float[] nutrition)
     {
-        public ThingDef customMeal;
-
-        public List<IngredientAndCostClass> ingredientList = new List<IngredientAndCostClass>();
-
-        public bool mysteryIngredients = false;
-
-        public Thing FindNextIngredientInHopper(List<IntVec3> cachedCells, Building_NutrientPasteDispenser instance,
-            float[] nutrition)
+        foreach (var c in cachedCells)
         {
-            foreach (var c in cachedCells)
+            Thing thing = null;
+            Thing thing2 = null;
+            var thingList = c.GetThingList(instance.Map);
+            foreach (var t in thingList)
             {
-                Thing thing = null;
-                Thing thing2 = null;
-                var thingList = c.GetThingList(instance.Map);
-                foreach (var t in thingList)
+                if (Building_NutrientPasteDispenser.IsAcceptableFeedstock(t.def) &&
+                    ingredientList.Any(x => x.thingDef == t.def)
+                    && nutrition[ingredientList.FindIndex(x => x.thingDef == t.def)] > 0f)
                 {
-                    if (Building_NutrientPasteDispenser.IsAcceptableFeedstock(t.def) &&
-                        ingredientList.Any(x => x.thingDef == t.def)
-                        && nutrition[ingredientList.FindIndex(x => x.thingDef == t.def)] > 0f)
-                    {
-                        thing = t;
-                    }
-
-                    if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage))
-                    {
-                        thing2 = t;
-                    }
+                    thing = t;
                 }
 
-                if (!(thing is null) && !(thing2 is null))
+                if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage))
                 {
-                    return thing;
+                    thing2 = t;
                 }
             }
 
-            return null;
+            if (thing is not null && thing2 is not null)
+            {
+                return thing;
+            }
         }
+
+        return null;
     }
 }

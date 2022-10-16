@@ -1,23 +1,14 @@
 # NPDTiers
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of Mistor Love n Smash Phils mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1864411034
 
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
-
-[table]
-	[tr]
-		[td]https://invite.gg/Mlie]![Image](https://i.imgur.com/zdzzBrc.png)
-[/td]
-		[td]https://github.com/emipa606/NPDTiers]![Image](https://i.imgur.com/kTkpTOE.png)
-[/td]
-	[/tr]
-[/table]
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
 
 [IMG]https://i.imgur.com/4eOBD6w.png[/IMG]
@@ -85,7 +76,7 @@ Grinder Hopper - Not yet Implemented
 [IMG]https://i.imgur.com/WPOySFN.png[/IMG]
 
 Q: Where do I go to add more nutrient paste dispensers or to edit the current ones?
-A: steamapps/workshop/content/294100/1864411034/Defs/Buildings/NewNPDExample.xml
+A: steamapps/workshop/content/294100/2043895447/Defs/Buildings/NewNPDExample.xml
 
 Q: What format do I add the Nutrient paste dispensers?
 A: XML
@@ -94,7 +85,7 @@ Q: Can I suggest a feature?
 A: Please do! We are looking in ways to further expand this mod.
 
 Q: Is this mod incompatible with anything?
-A: RimFridge currently is overwritten by the custom hoppers added by this mod.
+A: [strike]RimFridge currently is overwritten by the custom hoppers added by this mod.[/strike] No longer an issue in 1.3
  
 Q: Is this mod save game compatible? Can I remove it without issue?
 A: Yes and yes. But all custom NPD's must be removed from the map before you do so (original NPD is fine)
@@ -121,7 +112,7 @@ Mistor Love - Sprites / Textures
 [IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
 
 
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -131,7 +122,6 @@ Mistor Love - Sprites / Textures
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
-
 
 
 

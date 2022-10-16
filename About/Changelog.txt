@@ -1,5 +1,9 @@
 # Changelog for NPDTiers
 
+1.4.1 - Mod updated for 1.4 and passed autotests..
+LanguageData LanguageData LanguageData LanguageData Used DeepL to update translations for ChineseSimplified, French, German, Russian
+
+
 1.0.4.0 - Verified that rimfridge is no longer overwritten
 
 
