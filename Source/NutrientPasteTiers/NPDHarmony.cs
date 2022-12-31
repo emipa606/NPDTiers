@@ -135,7 +135,6 @@ internal static class NPDHarmony
         var list = new List<ThingDef>();
         var ingredientList = __instance.def.GetModExtension<NutrientPasteCustom>().ingredientList;
         var empty = !__instance.def.GetModExtension<NutrientPasteCustom>().ingredientList.Any();
-        Log.Message("-" + empty);
         if (!empty)
         {
             var nutritionLeft = new float[ingredientList.Count];
@@ -167,7 +166,6 @@ internal static class NPDHarmony
         }
         else
         {
-            Log.Message("2");
             var num = __instance.def.building.nutritionCostPerDispense - 0.0001f;
             for (;;)
             {
