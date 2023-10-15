@@ -29,7 +29,8 @@ public class NutrientPasteCustom : DefModExtension
                     thing = t;
                 }
 
-                if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage))
+                if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage) ||
+                    t.def.building?.isHopper == true)
                 {
                     thing2 = t;
                 }

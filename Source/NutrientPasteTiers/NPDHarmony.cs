@@ -87,7 +87,8 @@ internal static class NPDHarmony
 
                         Thing building = c.GetEdifice(dispenser.Map);
                         if (building is null || building.def != ThingDefOf.Hopper &&
-                            building.def.thingClass != typeof(NPDHopper_Storage))
+                            building.def.thingClass != typeof(NPDHopper_Storage) &&
+                            building.def.building?.isHopper == false)
                         {
                             continue;
                         }
@@ -349,7 +350,8 @@ internal static class NPDHarmony
                     thing = t;
                 }
 
-                if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage))
+                if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage) ||
+                    t.def.building?.isHopper == true)
                 {
                     thing2 = t;
                 }
@@ -406,7 +408,8 @@ internal static class NPDHarmony
                         thing = t;
                     }
 
-                    if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage))
+                    if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage) ||
+                        t.def.building?.isHopper == true)
                     {
                         thing2 = t;
                     }
@@ -447,7 +450,8 @@ internal static class NPDHarmony
                     thing = t;
                 }
 
-                if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage))
+                if (t.def == ThingDefOf.Hopper || t.def.thingClass == typeof(NPDHopper_Storage) ||
+                    t.def.building?.isHopper == true)
                 {
                     thing2 = t;
                 }
@@ -492,7 +496,8 @@ internal static class NPDHarmony
             var edifice = c.GetEdifice(__instance.Map);
 
             if (edifice is null ||
-                edifice.def != ThingDefOf.Hopper && edifice.def.thingClass != typeof(NPDHopper_Storage) ||
+                edifice.def != ThingDefOf.Hopper && edifice.def.thingClass != typeof(NPDHopper_Storage) &&
+                edifice.def.building?.isHopper == false ||
                 !reacher.CanReach(edifice, PathEndMode.Touch, Danger.Deadly))
             {
                 continue;
