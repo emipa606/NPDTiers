@@ -249,8 +249,8 @@ internal static class NPDHarmony
                 return false;
             }
 
-            var unused = Mathf.FloorToInt(rotProgress / 60000f) !=
-                         Mathf.FloorToInt(__instance.RotProgress / 60000f);
+            _ = Mathf.FloorToInt(rotProgress / GenDate.TicksPerDay) !=
+                Mathf.FloorToInt(__instance.RotProgress / GenDate.TicksPerDay);
             //Should Take Rot Damage?
             return false;
         }
@@ -321,9 +321,9 @@ internal static class NPDHarmony
     }
 
     //Needs Work
-    public static bool PotentialWorkThingRequest_CustomHoppers(ref ThingRequest __result)
+    public static bool PotentialWorkThingRequest_CustomHoppers()
     {
-        var unused = Find.CurrentMap.listerBuildings.AllBuildingsColonistOfClass<NPDHopper_Storage>()
+        _ = Find.CurrentMap.listerBuildings.AllBuildingsColonistOfClass<NPDHopper_Storage>()
             .ToList();
         return true;
     }
@@ -524,8 +524,7 @@ internal static class NPDHarmony
         //__result = base.GetReport();
     }
 
-    public static bool BadDispenserReportModified(ref AlertReport __result,
-        Alert_PasteDispenserNeedsHopper __instance)
+    public static bool BadDispenserReportModified(ref AlertReport __result)
     {
         __result = AlertReport.CulpritsAre(GetBadDispensers);
         return false;

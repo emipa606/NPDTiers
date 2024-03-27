@@ -24,6 +24,9 @@ public class NPDHopper_Storage : Building, ISlotGroupParent
     public bool StorageTabVisible => true;
 
     public bool IgnoreStoredThingsBeauty => def.building.ignoreStoredThingsBeauty;
+    public string GroupingLabel => def.building.groupingLabel;
+
+    public int GroupingOrder => def.building.groupingOrder;
 
     public SlotGroup GetSlotGroup()
     {

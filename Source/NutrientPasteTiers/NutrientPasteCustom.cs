@@ -6,11 +6,10 @@ namespace NutrientPasteTiers;
 
 public class NutrientPasteCustom : DefModExtension
 {
+    public readonly List<IngredientAndCostClass> ingredientList = [];
+
+    public readonly bool mysteryIngredients = false;
     public ThingDef customMeal;
-
-    public List<IngredientAndCostClass> ingredientList = new List<IngredientAndCostClass>();
-
-    public bool mysteryIngredients = false;
 
     public Thing FindNextIngredientInHopper(List<IntVec3> cachedCells, Building_NutrientPasteDispenser instance,
         float[] nutrition)

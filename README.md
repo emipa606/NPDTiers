@@ -5,6 +5,8 @@
 Update of Mistor Love n Smash Phils mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1864411034
 
+- Should now work with all hoppers that use the isHopper-property, or mods that add such a property like https://steamcommunity.com/sharedfiles/filedetails/?id=2894860548]Fridges Are Hoppers
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
@@ -108,9 +110,6 @@ N/A
 
 Smash Phil - Coding, Sorted the XML Folders and Organised
 Mistor Love - Sprites / Textures
-
-[IMG]https://i.imgur.com/p7Fv1Z6.gif[/IMG]
-
 
 ![Image](https://i.imgur.com/PwoNOj4.png)
 

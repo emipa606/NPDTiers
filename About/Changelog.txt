@@ -1,5 +1,8 @@
 # Changelog for NPDTiers
 
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
 1.4.3 - Should now work with all hoppers that use the isHopper-property, or mods that add such a property like [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2894860548]Fridges Are Hoppers[/url]
 
 
