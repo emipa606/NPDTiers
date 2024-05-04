@@ -1,5 +1,8 @@
 # Changelog for NPDTiers
 
+1.5.1 - Added support for Vanilla Nutrient Paste Expanded, thanks MrXarous
+
+
 1.5.0 - Mod updated for 1.5 and passed autotests
 
 
