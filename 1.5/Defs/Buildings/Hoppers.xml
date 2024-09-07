@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <!-- Use Comments for Modding Purposes here -->
   <ThingDef ParentName="BuildingBase">
@@ -35,6 +35,7 @@
     <building>
       <!-- Prevent deterioration for items on top of -->
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <isHopper>true</isHopper>
       <!-- Storage Settings on construction -->
       <fixedStorageSettings>
         <priority>Important</priority>
@@ -147,6 +148,7 @@
     <canOverlapZones>false</canOverlapZones>
     <building>
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <isHopper>true</isHopper>
       <fixedStorageSettings>
         <priority>Important</priority>
         <filter>

@@ -14,16 +14,26 @@ namespace NutrientPasteTiers;
 [StaticConstructorOnStartup]
 internal static class NPDHarmony
 {
+    private static readonly IEnumerable<ThingDef> allExtraHoppers;
+
     static NPDHarmony()
     {
         var harmony = new Harmony("rimworld.smashphil.npdtiers");
         harmony.PatchAll(Assembly.GetExecutingAssembly());
+
+        allExtraHoppers =
+            DefDatabase<ThingDef>.AllDefsListForReading.Where(def =>
+                def.building?.isHopper == true && def != ThingDefOf.Hopper);
 
         //Building
         harmony.Patch(
             AccessTools.Property(typeof(Building_NutrientPasteDispenser),
                 nameof(Building_NutrientPasteDispenser.DispensableDef)).GetGetMethod(),
             new HarmonyMethod(typeof(NPDHarmony), nameof(DispensableDefCustom)));
+        harmony.Patch(
+            AccessTools.Method(typeof(Building_NutrientPasteDispenser),
+                nameof(Building_NutrientPasteDispenser.GetGizmos)), postfix:
+            new HarmonyMethod(typeof(NPDHarmony), nameof(GetGizmosExtraHoppers)));
         /*BUG FIX: CUSTOM NPDs DONT UPDATE PRISONER COLOR */
         /*FUTURE IMPLEMENTATION ... see if thingclass override works */
         harmony.Patch(
@@ -117,6 +127,23 @@ internal static class NPDHarmony
 
         __result = __instance.def.GetModExtension<NutrientPasteCustom>().customMeal;
         return false;
+    }
+
+    public static IEnumerable<Gizmo> GetGizmosExtraHoppers(IEnumerable<Gizmo> values)
+    {
+        foreach (var value in values)
+        {
+            yield return value;
+        }
+
+        foreach (var hopper in allExtraHoppers)
+        {
+            var designatorBuild = BuildCopyCommandUtility.FindAllowedDesignator(hopper);
+            if (designatorBuild != null)
+            {
+                yield return designatorBuild;
+            }
+        }
     }
 
     public static bool TryDispenseCustomFood(ref Thing __result, Building_NutrientPasteDispenser __instance,
