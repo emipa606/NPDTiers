@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThoughtDef>
+    <defName>AteFowlMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate fowl meal</label>
+        <description>I don't know what I just ate but it made me want to vomit.</description>
+        <baseMoodEffect>-10</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AteFinePasteMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate fine paste meal</label>
+        <description>the only thing that would make this better is the texture, it tastes fine!</description>
+        <baseMoodEffect>+2</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef>
+    <defName>AteChocoPasteMeal</defName>
+    <durationDays>1</durationDays>
+    <stages>
+      <li>
+        <label>ate chocolate paste meal</label>
+        <description>I ate a chocolate paste meal, tasty!</description>
+        <baseMoodEffect>+6</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+</Defs>

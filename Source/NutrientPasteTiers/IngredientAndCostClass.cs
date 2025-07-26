@@ -13,7 +13,7 @@ public sealed class IngredientAndCostClass : IExposable
     {
     }
 
-    public IngredientAndCostClass(ThingDef thingDef, float nutritionCost)
+    private IngredientAndCostClass(ThingDef thingDef, float nutritionCost)
     {
         if (nutritionCost < 0)
         {

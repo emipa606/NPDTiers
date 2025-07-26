@@ -5,7 +5,7 @@ namespace NutrientPasteTiers;
 
 public struct IngredientAndCost : IEquatable<IngredientAndCost>, IExposable
 {
-    public IngredientAndCost(ThingDef thingDef, float nutritionCost)
+    private IngredientAndCost(ThingDef thingDef, float nutritionCost)
     {
         if (nutritionCost < 0)
         {

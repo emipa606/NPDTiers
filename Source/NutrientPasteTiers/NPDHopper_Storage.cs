@@ -66,10 +66,7 @@ public class NPDHopper_Storage : Building, ISlotGroupParent
 
     public List<IntVec3> AllSlotCellsList()
     {
-        if (cachedOccupiedCells == null)
-        {
-            cachedOccupiedCells = AllSlotCells().ToList();
-        }
+        cachedOccupiedCells ??= AllSlotCells().ToList();
 
         return cachedOccupiedCells;
     }
@@ -83,6 +80,8 @@ public class NPDHopper_Storage : Building, ISlotGroupParent
     {
         return settings.AllowedToAccept(t);
     }
+
+    public bool HaulDestinationEnabled => true;
 
     public override void PostMake()
     {

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Fine Nutrient paste -->
+  <FineNutrientPaste.label>Fine Nutrient paste</FineNutrientPaste.label>
+  <!-- EN: An exquisite and complicated series of injections improves the nutrient paste to taste much better -->
+  <FineNutrientPaste.description>An exquisite and complicated series of injections improves the nutrient paste to taste much better</FineNutrientPaste.description>
+  <!-- EN: Improved Nutrient paste -->
+  <ImprovedNutrientPaste.label>Improved Nutrient paste</ImprovedNutrientPaste.label>
+  <!-- EN: Build an improved varient of the nutrient paste dispenser which tastes slightly better -->
+  <ImprovedNutrientPaste.description>Build an improved varient of the nutrient paste dispenser which tastes slightly better</ImprovedNutrientPaste.description>
+  <!-- EN: Prisoner Nutrient paste -->
+  <PrisonerNutrientPaste.label>Prisoner Nutrient paste</PrisonerNutrientPaste.label>
+  <!-- EN: Build a surprisingly efficient nutrient paste dispenser that sacrifices taste for cost efficiency. -->
+  <PrisonerNutrientPaste.description>Build a surprisingly efficient nutrient paste dispenser that sacrifices taste for cost efficiency.</PrisonerNutrientPaste.description>
+</LanguageData>

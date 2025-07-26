@@ -2,6 +2,17 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5",
-  "SocialImageSet": true
+  "PreviewVersion": "1.6",
+  "SocialImageSet": true,
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 29283,
+  "LinesOfXML": 27853,
+  "CodeBaseSize": 75,
+  "LastXmlCleaning": "2025-07-26T22:11:22.5601363+02:00",
+  "SearchTags": [
+    "nutrient paste",
+    " customization"
+  ]
 }

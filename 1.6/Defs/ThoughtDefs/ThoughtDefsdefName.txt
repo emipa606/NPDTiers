@@ -1,0 +1,12 @@
+Vanila:
+AteLavishMeal - +12 Mood
+AteFineMeal - +5 Mood
+AteAwfulMeal - -4 Mood
+AteRawFood - -7 Mood
+AteKibble - -12
+AteCorpse - -12
+AteRottenFood - 10
+
+NPDTiers:
+AteFowlMeal - -10 Mood for eating prisoner paste
+AteFinePasteMeal - +2 Mood for eating fine paste

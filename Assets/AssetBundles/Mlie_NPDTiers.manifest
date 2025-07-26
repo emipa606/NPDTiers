@@ -1,0 +1,67 @@
+ManifestFileVersion: 0
+CRC: 3413912924
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: a0d6a7770be85ba3b60830166a5387b0
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: a0d6a7770be85ba3b60830166a5387b0
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/INutrientDispenser_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/FNutrientDispenser_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/PNutrientDispenser_northm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Freezer_hopper_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Freezer_hopper_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/INutrientDispenser_eastm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/PNutrientDispenser_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Grinder_hopper_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Refridgerator_hopper_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/ChocoPaste/ChocoPaste_b.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/FNutrientDispenser_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/PNutrientDispenser_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/PNutrientPaste/PNutrientPaste_b.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/PNutrientPaste/PNutrientPaste_c.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/INutrientDispenser_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Grinder_hopper_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/FridgeHopper_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/INutrientPaste/INutrientPaste_c.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/GrindHopper_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/GrindHopper_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Refridgerator_hopper_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/PNutrientPaste/PNutrientPaste_a.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/ChocoPaste/ChocoPaste_c.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/PNutrientDispenser_eastm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/FNutrientPaste/FNutrientPaste_a.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Grinder_hopper_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/FridgeHopper_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/FNutrientPaste/FNutrientPaste_c.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/FNutrientPaste/FNutrientPaste_b.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/INutrientDispenser_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/FreezerHopper_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/FNutrientDispenser_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/GrindHopper_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/FridgeHopper_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/INutrientPaste/INutrientPaste_b.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/INutrientDispenser_southm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Refridgerator_hopper_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/FNutrientDispenser_eastm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/PNutrientDispenser_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/FNutrientDispenser_northm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/PNutrientDispenser_southm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/Freezer_hopper_east.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/FreezerHopper_south.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/INutrientDispenser_northm.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Hoppers/FreezerHopper_north.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/ChocoPaste/ChocoPaste_a.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Item/Meal/INutrientPaste/INutrientPaste_a.png
+- Assets/Data/Mlie.NPDTiers/Textures/Things/Building/Production/FNutrientDispenser_southm.png
+Dependencies: []

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: Freezer Hopper -->
+  <FreezerHopper.label>Freezer Hopper</FreezerHopper.label>
+  <!-- EN: Just like a normal hopper but freezes your food for you -->
+  <FreezerHopper.description>Just like a normal hopper but freezes your food for you</FreezerHopper.description>
+  <!-- EN: Fridge Hopper -->
+  <FridgeHopper.label>Fridge Hopper</FridgeHopper.label>
+  <!-- EN: Just like a normal hopper but refrigerates your food for you -->
+  <FridgeHopper.description>Just like a normal hopper but refrigerates your food for you</FridgeHopper.description>
+</LanguageData>

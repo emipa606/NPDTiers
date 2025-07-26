@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: ate chocolate paste meal -->
+  <AteChocoPasteMeal.stages.ate_chocolate_paste_meal.label>ate chocolate paste meal</AteChocoPasteMeal.stages.ate_chocolate_paste_meal.label>
+  <!-- EN: I ate a chocolate paste meal, tasty! -->
+  <AteChocoPasteMeal.stages.ate_chocolate_paste_meal.description>I ate a chocolate paste meal, tasty!</AteChocoPasteMeal.stages.ate_chocolate_paste_meal.description>
+  <!-- EN: ate fine paste meal -->
+  <AteFinePasteMeal.stages.ate_fine_paste_meal.label>ate fine paste meal</AteFinePasteMeal.stages.ate_fine_paste_meal.label>
+  <!-- EN: the only thing that would make this better is the texture, it tastes fine! -->
+  <AteFinePasteMeal.stages.ate_fine_paste_meal.description>the only thing that would make this better is the texture, it tastes fine!</AteFinePasteMeal.stages.ate_fine_paste_meal.description>
+  <!-- EN: ate fowl meal -->
+  <AteFowlMeal.stages.ate_fowl_meal.label>ate fowl meal</AteFowlMeal.stages.ate_fowl_meal.label>
+  <!-- EN: I don't know what I just ate but it made me want to vomit. -->
+  <AteFowlMeal.stages.ate_fowl_meal.description>I don't know what I just ate but it made me want to vomit.</AteFowlMeal.stages.ate_fowl_meal.description>
+</LanguageData>
