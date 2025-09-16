@@ -1,5 +1,8 @@
 # Changelog for NPDTiers
 
+1.6.2 - ReUpdated german translation by BlackD
+
+
 1.6.1 - Updated german translation by BlackD
 
 
