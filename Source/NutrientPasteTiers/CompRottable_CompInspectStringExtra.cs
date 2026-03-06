@@ -14,12 +14,17 @@ public static class CompRottable_CompInspectStringExtra
     {
         var things = NPDHarmony.GetCompRottableThings(__instance);
 
-        if (!things.OfType<NPDHopper_Storage>().Any())
+        if (things == null || !things.OfType<NPDHopper_Storage>().Any())
         {
             return true;
         }
 
-        Thing t = things.OfType<NPDHopper_Storage>().First();
+        Thing t = things.OfType<NPDHopper_Storage>().FirstOrDefault();
+        if (t == null)
+        {
+            return true;
+        }
+
         var stringBuilder = new StringBuilder();
         var stage = __instance.Stage;
         if (stage != RotStage.Fresh)
@@ -45,26 +50,25 @@ public static class CompRottable_CompInspectStringExtra
         if (num > 0f)
         {
             var num2 = t.TryGetComp<CompPowerTrader>().PowerOn
-                ? Mathf.RoundToInt(things.OfType<NPDHopper_Storage>().First().def
-                    .GetModExtension<HopperCustom>().setTemperature)
+                ? Mathf.RoundToInt(t.def.GetModExtension<HopperCustom>().setTemperature)
                 : __instance.parent.AmbientTemperature;
             var num3 = GenTemperature.RotRateAtTemperature(num2);
             var ticksUntilRotAtCurrentTemp = NPDHarmony.TicksUntilRotAtSetTemp(__instance, num2);
             stringBuilder.AppendLine();
-            if (num3 < 0.001f)
+            switch (num3)
             {
-                stringBuilder.Append("CurrentlyFrozen".Translate() + ".");
-            }
-            else if (num3 < 0.999f)
-            {
-                stringBuilder.Append(
-                    "CurrentlyRefrigerated".Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod()) +
-                    ".");
-            }
-            else
-            {
-                stringBuilder.Append(
-                    "NotRefrigerated".Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod()) + ".");
+                case < 0.001f:
+                    stringBuilder.Append("CurrentlyFrozen".Translate() + ".");
+                    break;
+                case < 0.999f:
+                    stringBuilder.Append(
+                        "CurrentlyRefrigerated".Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod()) +
+                        ".");
+                    break;
+                default:
+                    stringBuilder.Append(
+                        "NotRefrigerated".Translate(ticksUntilRotAtCurrentTemp.ToStringTicksToPeriod()) + ".");
+                    break;
             }
         }
 

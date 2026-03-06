@@ -1,5 +1,8 @@
 # Changelog for NPDTiers
 
+1.6.3 - Fixed rotting tooltip when carried
+
+
 1.6.2 - ReUpdated german translation by BlackD
 
 

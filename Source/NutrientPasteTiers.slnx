@@ -6,4 +6,23 @@
     <BuildType Name="Release" />
   </Configurations>
   <Project Path="NutrientPasteTiers/NutrientPasteTiers.csproj" />
+  <Folder Name="/XML/About/">
+    <File Path="../About/about.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/ThoughtDefs/">
+    <File Path="../1.6/Defs/ThoughtDefs/Thoughts_Memory_EatingGlop.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Research/">
+    <File Path="../1.6/Defs/Research/ResearchTree.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Patches/">
+    <File Path="../1.6/Patches/ModExtensions.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Custom Meals/">
+    <File Path="../1.6/Defs/Custom Meals/CustomMealExamples.xml" />
+  </Folder>
+  <Folder Name="/XML/1.6/Defs/Buildings/">
+    <File Path="../1.6/Defs/Buildings/Hoppers.xml" />
+    <File Path="../1.6/Defs/Buildings/NewNPDExample.xml" />
+  </Folder>
 </Solution>
