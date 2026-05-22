@@ -1,5 +1,8 @@
 # Changelog for NPDTiers
 
+1.6.4 - Typo
+
+
 1.6.3 - Fixed rotting tooltip when carried
 
 

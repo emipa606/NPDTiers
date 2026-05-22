@@ -5,7 +5,7 @@
     <durationDays>1</durationDays>
     <stages>
       <li>
-        <label>ate fowl meal</label>
+        <label>ate foul meal</label>
         <description>I don't know what I just ate but it made me want to vomit.</description>
         <baseMoodEffect>-10</baseMoodEffect>
       </li>
