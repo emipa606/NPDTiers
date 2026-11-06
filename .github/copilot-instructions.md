@@ -1,71 +1,37 @@
-# GitHub Copilot Instructions for NPDTiers - The Nutrient Paste Expansion Mod (Continued)
-
-## Mod Overview and Purpose
-
-**NPDTiers - The Nutrient Paste Expansion Mod (Continued)** is an extensive framework designed to provide modders with the capability to create and modify Nutrient Paste Dispensers (NPD) in RimWorld. It addresses the limitations of the original NPD, which is hardcoded into the game, by granting users the ability to configure custom dispensers through XML, allowing customization of dispensed meals and ingredient effects.
-
+# NPDTiers - The Nutrient Paste Expansion Mod (Continued)
+NPDTiers is a base mod that adds the framework for creating your own Nutrient Paste Dispenser (NPD). It provides more access to things in the XML files such as the meal it will dispense or whether or not ingredients affect debuffs (like human meat). This mod is compatible with all hoppers that use the isHopper-property or mods that add such a property like Fridges Are Hoppers.
 ## Key Features and Systems
+NPDTiers adds the following systems:
 
-The mod introduces four distinct types of Nutrient Paste Dispensers and three unique hoppers, each designed with specific gameplay mechanics:
-
-- **Chocolate Paste Dispenser**
-  - Dispenses a chocolate meal that grants a +6 mood boost.
-  - Utilizes chocolate exclusively as an ingredient.
-
-- **Prisoner Nutrient Paste Dispenser**
-  - Dispenses a meal with a -10 mood, unaffected by human or insect meat.
-  - Requires fewer ingredients compared to standard meals.
-
-- **Improved Nutrient Paste Dispenser**
-  - Produces a meal similar to a Simple Meal.
-  - Affected by human and insect meat.
-  - Ingredient consumption is comparable to the original NPD.
-
-- **Fine Nutrient Paste Dispenser**
-  - Creates a meal that provides a +2 mood enhancement.
-  - Affected by human and insect meat.
-  - Consumes more ingredients than both the Original and Improved NPDs.
-
-Additionally, the mod adds hoppers:
-
-- **Refrigerator Hopper**: Utilizes 75 power to chill food, extending its preservation.
-- **Freezer Hopper**: Consumes 150 power to freeze food indefinitely.
-- **Grinder Hopper**: Not yet implemented.
+  * Nutrient Paste Dispensers (NPD): 4 NPDs are added by this mod including Chocolate Paste Dispenser, Prisoner Nutrient Paste Dispenser, Improved Nutrient Paste Dispenser, and Fine Nutrient Paste Dispenser.
+  * Hoppers: 3 Hoppers are added by this mod including Refrigerator Hopper, Freezer Hopper, and Grinder Hopper (not yet implemented).
 
 ## Coding Patterns and Conventions
-
-Coding within this mod follows typical C# conventions, using static classes and methods to handle logic associated with various components of the dispensers and hoppers. Take note of file naming conventions - class names such as `Building_NutrientPasteDispenser_GetGizmos` suggest functionality tied to specific components.
-
+The coding patterns and conventions used in this mod follow the RimWorld modding conventions. The source code is written in C# and uses the Harmony patching framework to modify game behavior.
 ## XML Integration
-
-To add or modify nutrient paste dispensers, users should navigate to:
-`steamapps/workshop/content/294100/2043895447/Defs/Buildings/NewNPDExample.xml`
-
-The format for making changes or additions is XML, allowing for extensive customization and integration with new or existing dispensers.
-
+NPDTiers uses XML files to define new buildings, research projects, and thoughts. The XML files are located in the `Defs` folder of the mod and are named after the type of def they define (e.g. `Buildings.xml`, `Research.xml`). The XML files use the standard RimWorld XML format.
 ## Harmony Patching
-
-The mod employs Harmony patches to extend and modify base game functionality seamlessly. `NPDHarmony` is the internal static class for managing these patches, allowing for dynamic changes without altering the original game code directly.
-
+NPDTiers uses the Harmony patching framework to modify game behavior. Harmony patches are used to add new functionality, remove existing functionality, or modify existing functionality. The Harmony patches are defined in C# files located in the `Source` folder of the mod.
 ## Suggestions for Copilot
+Here are some suggestions for using Copilot with this mod:
 
-When using GitHub Copilot for further development or modification:
+  * Use Copilot to quickly generate XML code for new buildings, research projects, or thoughts.
+  * Use Copilot to generate Harmony patches to modify game behavior.
+  * Use Copilot to quickly generate C# code for new classes or methods.
+  * Use Copilot to suggest improvements to existing code.
 
-- **XML Editing**: Use Copilot to suggest XML structures by defining typical nutrient dispenser properties.
-- **Harmony Patches**: Let Copilot assist in generating harmony patches by creating transpilers or prefix/postfix patches for desired methods.
-- **Static Method Optimization**: Implement utilities or helper functions using Copilot for recurring functionalities in static methods.
-- **Debugging**: Allow Copilot to propose logging or debugging strategies when testing new components or features.
-- **Custom Dispenser**: Get insights on introducing new dispenser types by encouraging Copilot to automate parts of JSON or XML generation based on documented patterns.
+## Project Solution Guidelines
+- Relevant mod XML files are included as Solution Items under the solution folder named XML, these can be read and modified from within the solution.
+- Use these in-solution XML files as the primary files for reference and modification.
+- The `.github/copilot-instructions.md` file is included in the solution under the `.github` solution folder, so it should be read/modified from within the solution instead of using paths outside the solution. Update this file once only, as it and the parent-path solution reference point to the same file in this workspace.
+- When making functional changes in this mod, ensure the documented features stay in sync with implementation; use the in-solution `.github` copy as the primary file.
+- In the solution is also a project called Assembly-CSharp, containing a read-only version of the decompiled game source, for reference and debugging purposes.
+- For any new documentation, update this copilot-instructions.md file rather than creating separate documentation files.
 
-## FAQs and Notes
 
-- **Compatibility**: The mod is compatible with most setups after version 1.3, though it can conflict with RimFridge due to custom hoppers.
-- **Save Game Compatibility**: Fully compatible, but custom NPDs must be removed before uninstallation.
-- **Expansion Ideas**: Users are encouraged to suggest new features – expanding functionality through Copilot can assist here by brainstorming implementations.
-- **Bug Reporting**: Use the Discord channel for discussion; GitHub issues can be used for more structured reports.
+## Hard rules (must follow)
+- Do NOT run commands that modify the repo (no git commit, git apply, dotnet format) unless explicitly asked.
+- Prefer minimal reads: read only the smallest code region needed (around the suspicious lines).
+- When mentioning SonarQube issues, automatically use the SonarQube MCP service to fetch and address issues instead of making inferred fixes without querying SonarQube first.
+- When mentioning the rimworld log, automatically use the Rimworld MCP service to fetch the log.
 
-**Credits**: 
-- Smash Phil: Coding, XML sorting, and organization.
-- Mistor Love: Sprites and textures.
-
-Use `RimSort` to manage mod load order for optimal performance.

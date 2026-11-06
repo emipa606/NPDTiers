@@ -18,7 +18,5 @@ public static class JobDriver_FoodDeliver_GetReport
                     targetBuilding.def.GetModExtension<NutrientPasteCustom>().customMeal.label)
                 .Replace("TargetB", deliveree.LabelShort);
         }
-
-        //__result = base.GetReport();
     }
 }

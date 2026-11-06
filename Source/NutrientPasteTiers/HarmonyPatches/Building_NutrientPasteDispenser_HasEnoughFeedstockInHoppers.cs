@@ -57,7 +57,7 @@ public static class Building_NutrientPasteDispenser_HasEnoughFeedstockInHoppers
                     nutritionCost[ingredientList.FindIndex(x => x.thingDef == thing.def)] +=
                         thing.stackCount * thing.GetStatValue(StatDefOf.Nutrition);
                     if (nutritionCost[ingredientList.FindIndex(x => x.thingDef == thing.def)] >=
-                        ingredientList.Find(x => x.thingDef == thing.def).nutritionCost)
+                        ingredientList.Find(x => x.thingDef == thing.def)!.nutritionCost)
                     {
                         ingredientFulfilled[ingredientList.FindIndex(x => x.thingDef == thing.def)] = true;
                     }

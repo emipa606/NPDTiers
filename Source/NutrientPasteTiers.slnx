@@ -9,20 +9,23 @@
   <Folder Name="/XML/About/">
     <File Path="../About/about.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/ThoughtDefs/">
-    <File Path="../1.6/Defs/ThoughtDefs/Thoughts_Memory_EatingGlop.xml" />
+  <Folder Name="/XML/1.7/Defs/Buildings/">
+    <File Path="../1.7/Defs/Buildings/Hoppers.xml" />
+    <File Path="../1.7/Defs/Buildings/NewNPDExample.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/Research/">
-    <File Path="../1.6/Defs/Research/ResearchTree.xml" />
+  <Folder Name="/XML/1.7/Defs/ThoughtDefs/">
+    <File Path="../1.7/Defs/ThoughtDefs/Thoughts_Memory_EatingGlop.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Patches/">
-    <File Path="../1.6/Patches/ModExtensions.xml" />
+  <Folder Name="/XML/Languages/English/Keyed/">
+    <File Path="../Languages/English/Keyed/settings.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/Custom Meals/">
-    <File Path="../1.6/Defs/Custom Meals/CustomMealExamples.xml" />
+  <Folder Name="/XML/1.7/Patches/">
+    <File Path="../1.7/Patches/ModExtensions.xml" />
   </Folder>
-  <Folder Name="/XML/1.6/Defs/Buildings/">
-    <File Path="../1.6/Defs/Buildings/Hoppers.xml" />
-    <File Path="../1.6/Defs/Buildings/NewNPDExample.xml" />
+  <Folder Name="/XML/1.7/Defs/Research/">
+    <File Path="../1.7/Defs/Research/ResearchTree.xml" />
+  </Folder>
+  <Folder Name="/XML/1.7/Defs/Custom Meals/">
+    <File Path="../1.7/Defs/Custom Meals/CustomMealExamples.xml" />
   </Folder>
 </Solution>

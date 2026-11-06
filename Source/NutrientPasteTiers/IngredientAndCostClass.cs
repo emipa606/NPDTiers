@@ -46,7 +46,7 @@ public sealed class IngredientAndCostClass : IExposable
         }
 
         DirectXmlCrossRefLoader.RegisterObjectWantsCrossRef(this, "thingDef", xmlRoot.Name);
-        nutritionCost = ParseHelper.FromString<float>(xmlRoot.FirstChild.Value);
+        nutritionCost = ParseHelper.FromString<float>(xmlRoot.FirstChild?.Value);
     }
 
     public override string ToString()

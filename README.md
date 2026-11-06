@@ -123,4 +123,4 @@ Mistor Love - Sprites / Textures
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/NPDTiers?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2043895447) | tags: customization, nutrient paste
+[![Image](https://img.shields.io/github/v/release/emipa606/NPDTiers?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2043895447) | customization, nutrient paste
